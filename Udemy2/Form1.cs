@@ -45,6 +45,13 @@ namespace Udemy2
             titlesTable = new DataTable();
             titlesAdapter.Fill(titlesTable);
 
+
+            //bind controls
+            txtTitle.DataBindings.Add("Text", titlesTable, "Title");
+            txtYear.DataBindings.Add("Text", titlesTable, "Year_Published");
+            txtISBN.DataBindings.Add("Text", titlesTable, "ISBN");
+            txtPubID.DataBindings.Add("Text", titlesTable, "PubId");
+
             conn.Close();
             conn.Dispose();
             titlesAdapter.Dispose();
