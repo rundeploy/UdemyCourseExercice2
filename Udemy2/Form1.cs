@@ -20,10 +20,11 @@ namespace Udemy2
     public partial class frmTitles : Form
     {
 
-        OleDbConnection conn;
-        OleDbCommand titlesCommand;
-        OleDbDataAdapter titlesAdapter;
-        DataTable titlesTable;
+        OleDbConnection conn; // Creates a connection to the database
+        OleDbCommand titlesCommand; //Hold the new command to be executed
+        OleDbDataAdapter titlesAdapter; //use the sql command and executes it in database
+        DataTable titlesTable; //a table with contents of a table from database
+        CurrencyManager titlesManager;
 
         public frmTitles()
         {
@@ -52,11 +53,34 @@ namespace Udemy2
             txtISBN.DataBindings.Add("Text", titlesTable, "ISBN");
             txtPubID.DataBindings.Add("Text", titlesTable, "PubId");
 
+            //establish currency manager
+            titlesManager = (CurrencyManager) BindingContext[titlesTable];
+
             conn.Close();
             conn.Dispose();
             titlesAdapter.Dispose();
             titlesTable.Dispose();
 
+        }
+
+        private void btnFirst_Click(object sender, EventArgs e)
+        {
+            titlesManager.Position = 0;
+        }
+
+        private void btnPrevious_Click(object sender, EventArgs e)
+        {
+            titlesManager.Position--;
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            titlesManager.Position++;
+        }
+
+        private void btnLast_Click(object sender, EventArgs e)
+        {
+            titlesManager.Position = titlesManager.Count-1;
         }
     }
 }
