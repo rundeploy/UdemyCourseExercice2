@@ -1,0 +1,10 @@
+D:\PROJETOS\UdemyCourse (Alex)\Udemy2\Udemy2\bin\Debug\Udemy2.exe.config
+D:\PROJETOS\UdemyCourse (Alex)\Udemy2\Udemy2\bin\Debug\Udemy2.exe
+D:\PROJETOS\UdemyCourse (Alex)\Udemy2\Udemy2\bin\Debug\Udemy2.pdb
+D:\PROJETOS\UdemyCourse (Alex)\Udemy2\Udemy2\obj\Debug\Udemy2.csprojAssemblyReference.cache
+D:\PROJETOS\UdemyCourse (Alex)\Udemy2\Udemy2\obj\Debug\Udemy2.frmTitles.resources
+D:\PROJETOS\UdemyCourse (Alex)\Udemy2\Udemy2\obj\Debug\Udemy2.Properties.Resources.resources
+D:\PROJETOS\UdemyCourse (Alex)\Udemy2\Udemy2\obj\Debug\Udemy2.csproj.GenerateResource.cache
+D:\PROJETOS\UdemyCourse (Alex)\Udemy2\Udemy2\obj\Debug\Udemy2.csproj.CoreCompileInputs.cache
+D:\PROJETOS\UdemyCourse (Alex)\Udemy2\Udemy2\obj\Debug\Udemy2.exe
+D:\PROJETOS\UdemyCourse (Alex)\Udemy2\Udemy2\obj\Debug\Udemy2.pdb
